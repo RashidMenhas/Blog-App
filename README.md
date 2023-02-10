@@ -131,7 +131,7 @@ In order to run this project you need:
 Clone this repository to your desired folder:
  - mkdir my-folder
  - cd my-folder
- - git clone [(git@github.com:RashidMenhas/Blog-App.git)]
+ - git clone [(https://github.com/RashidMenhas/Blog-App.git)]
 
 ### Usage
 
