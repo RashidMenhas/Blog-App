@@ -41,4 +41,8 @@ RSpec.describe Post, type: :model do
   it ' Should test likes_counter to be >= 0' do
     expect(subject.likes_counter).to be >= 0
   end
+
+  it 'Can select recent five post' do
+    expect(subject).to respond_to(:recent_five)
+  end
 end
