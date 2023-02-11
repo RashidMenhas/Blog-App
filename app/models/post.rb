@@ -1,5 +1,5 @@
 class Post < ApplicationRecord
-  validates :title, presence: true
+  validates :title, presence: true, length: { in: 1..250 }
   validates :comments_counter, numericality: { only_integer: true }, comparison: { greater_than_or_equal_to: 0 }
   validates :likes_counter, numericality: { only_integer: true }, comparison: { greater_than_or_equal_to: 0 }
 
