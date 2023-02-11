@@ -33,4 +33,8 @@ RSpec.describe User, type: :model do
     expect(subject.post_counter).to eq 10
     expect(subject).to be_valid
   end
+
+  it 'Can select recent 3 posts' do
+    expect(subject).to respond_to(:recent_three)
+  end
 end
